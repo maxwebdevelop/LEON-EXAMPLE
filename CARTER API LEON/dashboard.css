@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-y: none;
+  overflow-x: none;
+}
+
+body {
+  background-image: url("Pictures/blue.jpeg");
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  user-select: none;
+  height: 100vh;
+}
+
+#top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+  vertical-align: center;
+  margin-top: -1%;
+}
+
+#leonDashboard{
+  vertical-align: center;
+  margin-top: 1%;
+}
+
+#leonSysCheck{
+  vertical-align: center;
+  margin-top: 1%;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#displaySystemCheck{
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  animation: glitch 1.2s linear;
+}
+
+
+.rightTopTime{
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  vertical-align: center;
+}
+
+#timeDash{
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  vertical-align: center;
+}
+
+#dateDash{
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  vertical-align: center;
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+*/
+
+#topBottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  margin-top: 1.5%;
+  animation: glitch 1.2s linear;
+}
+
+#left{
+  width: 30%;
+  text-align: left;
+  align-items: center;
+}
+
+#left h4{
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  margin-top: 0;
+  padding-top: 0;
+  vertical-align: center;
+}
+
+#controlVolumeButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+#controlVolumeButtons #TURNON{
+  background-color: #00741b00;
+  border: 0.5px solid #00c968;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 30%;
+  color: #00c968;
+  margin-right: 4%;
+} 
+
+#controlVolumeButtons #TURNOFF{
+  background-color: #00741b00;
+  border: 0.5px solid #ff0000;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 30%;
+  color: #ff0000;
+}
+
+#right{
+  width: 30%;
+  text-align: right;
+  align-items: center;
+}
+
+#right h4{
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  text-align: right;
+  margin-top: 0;
+  padding-top: 0;
+  vertical-align: center;
+}
+
+#controlLockdownButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+#controlLockdownButtons #lockdownButton{
+  background-color: #00741b00;
+  border: 0.5px solid #ff0000;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  width: 40%;
+  color: #ff0000;
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+*/
+
+#WiFiConnection{
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  animation: glitch 0.2s;
+  color: white;
+}
+
+#clipped-corners {
+  background-color: #6600051d;
+  color: #fff;
+  opacity: 0.8;
+  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/brace.svg) 70 50; 
+  border-style: inset;
+  border-width: 30px;
+  transition: .5s;
+  }
+
+  #displayWiFiConnection{
+    font-weight: lighter;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#leonLoadUp{
+  margin-top: 5%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#leonLoadUp h4{
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  margin-top: 0;
+  padding-top: 0;
+  vertical-align: center;
+}
+
+#displaypercentage{
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: -1%;
+  padding-top: 0;
+  color: white;
+  
+}
+
+#myProgress {
+  background-color: white;
+  height: 0.4vh;
+  margin-top: 2%;
+}
+
+#myBar {
+  width: 1%;
+  height: 0.4vh;
+  background-color: #0077c9;
+}
+
+
+#UrgentCallSection h4{
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Roboto", sans-serif;
+  text-align: right;
+  margin-top: 0;
+  padding-top: 0;
+  vertical-align: center;
+  animation: glitch 1.2s linear;
+}
+
+#urgentCallButton{
+  background-color: #00741b00;
+  border: 0.5px solid #ff9500;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: #ff9500;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+*/
+
+#displayBattery{
+  font-weight: lighter;
+  padding-top: 0;
+  color: white;
+  position: absolute;
+  bottom:0;
+  right: 1%;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#alertLockDown{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  text-align: center;
+  vertical-align: center;
+  font-weight: bolder;
+  animation: blink 1.2s linear infinite;
+  -webkit-text-stroke: 1px red;
+  text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+}
+
+/* blink animation */
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes glitch{
+  5%{
+      opacity: 0.6;
+  }
+  10%{
+      opacity: 0.2;
+  }   
+  15%{
+      opacity: 0.6;
+  }
+  20%{
+      opacity: 0.2;
+  }
+  25%{
+      opacity: 0.6;
+  }
+  30%{
+      opacity: 0.2;
+  }
+  35%{
+      opacity: 0.6;
+  }
+  40%{
+      opacity: 0.2;
+  }
+}

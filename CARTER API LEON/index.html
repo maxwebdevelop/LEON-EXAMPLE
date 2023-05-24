@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- CONNECT IT TO CSS-->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="https://media.twiliocdn.com/sdk/js/client/v1.8/twilio.min.js"></script>
+  </head>
+  <body>
+    <!-- CREATE THE CENTER PEIECE OF LEON -->
+    <!-- CIRCLE THAT WILL MOVE -->
+    <section class="center">
+      <div class="circleOuter" id="circleOuter"></div>
+      <div class="circle1" id="circle1">
+        <div class="circle2" id="circle2">
+          <div class="circle3" id="circle3">
+            <h3>L E O N</h3>
+          </div>
+          <div class="circleOuter1" id="circleOuter1"></div>
+        </div>
+      </div>
+    </section>
+    <!-- THIS WILL OUTPUT THE LEON RESPONCES -->
+    <section class="centerBottom">
+      <div>
+        <p id="output"></p>
+      </div>
+    </section>
+
+    <!-- THIS WILL DISPLAY THE TIME IN THE RIGHT HAND CORNER OF THE SCREEN -->
+    <section class="rightTop">
+      <div>
+        <h4 id="time"></h4>
+        <h4 id="date"></h4>
+      </div>
+    </section>
+
+    <!-- THIS WILL DISPLAY THE WEATHER -->
+    <section class="displayWeather">
+      <div>
+        <h2 id="weatherHeader"></h2>
+      </div>
+      <div id="weatherBody"></div>
+      <div id="DressAproporiatly">
+        <p id="DressOutfit"></p>
+      </div>
+    </section>
+
+    <!-- THIS WILL DISPLAY THE NO REMINDERS INFORMATION -->
+    <section id="noRemindersSection">
+      <div>
+        <h2 id="noReminders"></h2>
+      </div>
+    </section>
+
+    <!-- THIS WILL DISPLAY BIBLE COLLEGE  -->
+    <section id="bibleBollegeReminder">
+      <div>
+        <h2 id="bibleCollege"></h2>
+      </div>
+    </section>
+
+    <section id="displayImportantNews">
+      <h2 id="importantNewsHeader">IMPORTANT NEWS</h2>
+      <div id="importantNewsBody"></div>
+    </section>
+
+    <section id="remindersWidget">
+      <div id="leon_reminders" class="draggable">
+        <h1>REMINDERS</h1>
+        <div id="allReminders"></div>
+      </div>
+    </section>
+
+    <section id="githubWidget">
+      <div id="leon_github" class="draggable2">
+        <h1>GITHUB</h1>
+        <div>
+          <h4 id="githubName"></h4>
+          <h4 id="githubDescription"></h4>
+          <div id="followInfo">
+            <h4 id="githubFollowers"></h4>
+            <h4 id="githubFollowing"></h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="TimerWidget">
+      <div id="leon_timer" class="draggabletimer">
+        <h1>T I M E R</h1>
+        <div>
+          <h4 id="timeCountdown"></h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="youtubeResults">
+      <div>
+        <h1 id="resultsHeaderYoutube"></h1>
+      </div>
+
+      <div id="youtube"></div>
+    </section>
+
+    <section>
+      <div>
+        <a href="dashboard.html">
+          <button id="invisibleButton"></button>
+        </a>
+      </div>
+    </section>
+
+    <section id="whosProfile">
+      <div id="whos_profile_name" class="draggable3">
+        <h4>P R O F I L E</h4>
+        <div>
+          <p>Y_O_U_R_S</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCK DOWN TEXT -->
+    <section id="lockdownIsActive">
+      <div>
+        <h3>LEON IS UNDER A LOCKDOWN</h3>
+      </div>
+    </section>
+
+    <script src="JavaScript/Firebase.js"></script>
+    <script src="JavaScript/index.js"></script>
+    <script src="JavaScript/DisplayImportantInformationBackground.js"></script>
+    <script src="JavaScript/CheckIfLeonIsOnline.js"></script>
+    <script src="JavaScript/GetTheCurrentWeather.js"></script>
+    <script src="JavaScript/DisplayWeather.js"></script>
+    <script src="JavaScript/GetTheTime.js"></script>
+    <script src="JavaScript/BackgroundInformationDisplay.js"></script>
+    <script src="JavaScript/GetImportantNews.js"></script>
+    <script src="JavaScript/SearchResults.js"></script>
+    <script src="JavaScript/SetAReminder.js"></script>
+    <script src="JavaScript/DeleteAReminder.js"></script>
+    <script src="JavaScript/SystemCheckImportant.js"></script>
+    <script src="JavaScript/StartTimer.js"></script>
+    <script src="JavaScript/BackAtHome.js"></script>
+    <script src="JavaScript/OpenAllAplications.js"></script>
+    <script src="JavaScript/ShowGithub.js"></script>
+    <script src="JavaScript/ClosingAllWidgets.js"></script>
+    <script src="JavaScript/ShowReminders.js"></script>
+    <script src="JavaScript/PlayYoutube.js"></script>
+    <!-- MOVABLE WIDGETS JAVASCRIPT -->
+    <script src="JavaScript/MovableWidgets/MovableReminders.js"></script>
+    <script src="JavaScript/MovableWidgets/MovableGithub.js"></script>
+    <script src="JavaScript/MovableWidgets/MovableProfile.js"></script>
+    <script src="JavaScript/MovableWidgets/MovableTimer.js"></script>
+  </body>
+</html>

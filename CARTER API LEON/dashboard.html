@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- CONNECT IT TO CSS-->
+    <link rel="stylesheet" type="text/css" href="dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="https://media.twiliocdn.com/sdk/js/client/v1.8/twilio.min.js"></script>
+  </head>
+  <body>
+<section id="top">
+
+    <section id="leonDashboard">
+        <div>
+            <h2 onclick="Redirect()">L E O N _ D A S H B O A R D</h2>
+        </div>
+    </section>
+
+    <section id="leonSysCheck">
+        <div>
+            <h2 onclick="Redirect()">L E O N _ L A T E S T _ S Y S T E M _ C H E C K</h2>
+        </div>
+        <p>
+            <h3 id="displaySystemCheck"></h3>
+        </p>
+    </section>
+
+    <section class="rightTopTime">
+        <div>
+          <h4 id="timeDash"></h4>
+          <h4 id="dateDash"></h4>
+        </div>
+      </section>
+</section>
+
+
+<section id="topBottom">
+    <section id="left">
+        <div>
+            <h4>L I S T E N I N G</h4>
+        </div>
+        <div id="controlVolumeButtons">
+            <button id="TURNON" onclick="turnOnListen()">ON</button>
+            <button id="TURNOFF" onclick="turnOffListen()">OFF</button>
+        </div>
+    </section>
+
+
+    <section id="right">
+        <div>
+            <h4>L O C K D O W N</h4>
+        </div>
+        <div id="controlLockdownButtons">
+            <button id="lockdownButton" onclick="lockDown()">L O C K D O W N</button>        
+        </div>
+    </section>
+</section>
+
+
+<section id="leonLoadUp">
+    <section>
+        <div>
+            <h4>L E O N  _  L O A D  _  U P</h4>
+        </div>
+        <p id="displaypercentage"></p>
+        <div id="myProgress">
+            <div id="myBar"></div>
+        </div>
+    </section> 
+    
+    <section id="UrgentCallSection">
+        <div>
+            <h4> U R G E N T _ C A L L</h4>
+        </div>
+        <div id="urgentCall">
+            <button id="urgentCallButton" onclick="UrgentCall()">U R G E N T _ C A L L</button>
+        </div>
+    </section>
+</section>
+
+<section id="displayBattery">
+    <div>
+        <h2 id="BatteryLife"></h2>
+    </div>
+</section>
+
+
+<section id="alertLockDown">
+    <div>
+        <h1 onclick="Unlock()">L E O N  _  I S  _  U N D E R  _  A   _  L O C K D O W N</h1>
+    </div>
+</section>
+
+    <script src="JavaScript/Firebase.js"></script>
+    <script src="JavaScript/Dashboard/CheckIfItsLockdownOrNotDash.js"></script>
+    <script src="JavaScript/Dashboard/BackgroundCheck.js"></script>
+    <script src="JavaScript/Dashboard/DisplayTime.js"></script>
+    <script src="JavaScript/Dashboard/Redirect.js"></script>
+    <script src="JavaScript/Dashboard/ManageLEONListening.js"></script>
+    <script src="JavaScript/Dashboard/PutLEONOnLockdown.js"></script>
+    <script src="JavaScript/Dashboard/ProgressBarLoadUp.js"></script>
+    <script src="JavaScript/Dashboard/UrgentCalls/UrgentCall.js"></script>
+    <!-- MOVABLE ELEMENTS -->
+  </body>
+</html>
