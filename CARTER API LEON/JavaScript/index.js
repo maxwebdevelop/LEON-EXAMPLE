@@ -33,7 +33,7 @@ const sendQueryToApi = (transcript) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        api_key: "*****",
+        api_key: "2IKy96qCv45OE2UlwZHMPemOAedYqa9u",
         query: transcript.replace(wakeUpWord, "").trim(),
         uuid: "user-id-123",
       }),
@@ -104,23 +104,4 @@ audio.onended = () => (
   (document.getElementById("circleOuter1").style.display = "none")
 );
 recognition.onend = () => recognition.start();
-var database = firebase.database();
-var ref = database.ref("Listening");
-ref.on("value", function (snapshot) {
-  var data = snapshot.val();
-  if (data.listen === "on") {
-    console.log("Yes I can listen");
-    var ref = database.ref("LEONLOCKDOWN");
-    ref.on("value", function (snapshot) {
-      if (snapshot.val().LEONLOCKDOWN == true) {
-        console.log("I am under lockdown, I cant Listen");
-        recognition.stop();
-      } else {
-        recognition.start();
-      }
-    });
-  } else {
-    console.log("No I can't listen");
-    recognition.stop();
-  }
-});
+recognition.start();
