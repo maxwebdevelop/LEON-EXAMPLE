@@ -19,7 +19,8 @@ function ShowingReminders() {
         // speak no reminders
         let myAudio = new Audio();
         myAudio.src =
-          "*****" + "It looks like you do not have any reminders set";
+          "https://api.carterapi.com/v0/speak/2IKy96qCv45OE2UlwZHMPemOAedYqa9u/" +
+          "It looks like you do not have any reminders set";
         myAudio.play();
       }
     });

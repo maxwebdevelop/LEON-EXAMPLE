@@ -362,7 +362,7 @@ li {
   position: absolute;
   bottom: 8%;
   left: 1%;
-  display: none;
+  display: block;
   width: 20%;
   overflow: scroll;
   height: 40%;
@@ -408,12 +408,12 @@ a {
   width: 100%;
 }
 
-.draggable2{
+.draggable2 {
   position: absolute;
   width: 100%;
 }
 
-.draggable2{
+.draggable2 {
   position: absolute;
   width: 100%;
 }
@@ -438,12 +438,12 @@ a {
   background-color: #6600051d;
   color: #fff;
   opacity: 0.8;
-  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/brace.svg) 70 50; 
+  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/brace.svg)
+    70 50;
   border-style: inset;
   border-width: 30px;
-  transition: .5s;
+  transition: 0.5s;
 }
-
 
 #leon_reminders h1 {
   margin: 0;
@@ -470,7 +470,7 @@ a {
 
 */
 
-#githubWidget{
+#githubWidget {
   display: none;
   width: 30%;
   height: 40%;
@@ -481,14 +481,15 @@ a {
   left: 20%;
 }
 
-#leon_github{
+#leon_github {
   background-color: #6600051d;
   color: #fff;
   opacity: 0.8;
-  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/brace.svg) 70 50; 
+  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/brace.svg)
+    70 50;
   border-style: inset;
   border-width: 30px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 #leon_github h1 {
@@ -503,12 +504,12 @@ a {
   text-align: center;
 }
 
-#leon_github #githubDescription{
+#leon_github #githubDescription {
   text-align: center;
   font-weight: lighter;
 }
 
-#followInfo{
+#followInfo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -525,11 +526,11 @@ a {
 
 
 */
-.draggabletimer{
+.draggabletimer {
   position: absolute;
   width: 100%;
 }
-#TimerWidget{
+#TimerWidget {
   display: none;
   width: 20%;
   height: 30%;
@@ -540,14 +541,15 @@ a {
   left: 20%;
 }
 
-#leon_timer{
+#leon_timer {
   background-color: #6600051d;
   color: #fff;
   opacity: 0.8;
-  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/brace.svg) 70 50; 
+  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/brace.svg)
+    70 50;
   border-style: inset;
   border-width: 20px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 #leon_timer h1 {
@@ -559,7 +561,7 @@ a {
   border-bottom: 2px solid #3fbe92;
 }
 
-#leon_timer #timeCountdown{
+#leon_timer #timeCountdown {
   text-align: center;
   font-size: 30px;
 }
@@ -576,8 +578,7 @@ a {
 
 */
 
-
-#youtubeResults{
+#youtubeResults {
   width: 35%;
   height: 35%;
   position: absolute;
@@ -591,7 +592,7 @@ a {
   box-shadow: 0 0 10px #005eff;
 }
 
-#resultsHeaderYoutube{
+#resultsHeaderYoutube {
   color: #fff;
   font-size: 2em;
   font-weight: 600;
@@ -601,7 +602,7 @@ a {
   border-bottom: 0.5px solid white;
 }
 
-#youtubeResults iframe{
+#youtubeResults iframe {
   /* fit the  iframe inside */
   margin: 0;
   padding: 0;
@@ -660,7 +661,7 @@ a {
 */
 
 /* RANDOM ADD ONS */
-#whosProfile{
+#whosProfile {
   display: block;
   width: 15%;
   height: 20%;
@@ -669,7 +670,8 @@ a {
   position: absolute;
   bottom: 0%;
   right: 5%;
-  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/brace.svg) 70 50; 
+  border-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/brace.svg)
+    70 50;
   border-style: inset;
   border-width: 30px;
   color: white;
@@ -678,73 +680,38 @@ a {
   animation: glitch 0.5s;
 }
 
-#whosProfile h4{
+#whosProfile h4 {
   width: 100%;
   text-align: center;
   color: white;
-  background-color: #AA0505;
+  background-color: #aa0505;
   vertical-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ANIMATIONS */
-@keyframes glitch{
-  5%{
-      opacity: 0.6;
+@keyframes glitch {
+  5% {
+    opacity: 0.6;
   }
-  10%{
-      opacity: 0.2;
-  }   
-  15%{
-      opacity: 0.6;
+  10% {
+    opacity: 0.2;
   }
-  20%{
-      opacity: 0.2;
+  15% {
+    opacity: 0.6;
   }
-  25%{
-      opacity: 0.6;
+  20% {
+    opacity: 0.2;
   }
-  30%{
-      opacity: 0.2;
+  25% {
+    opacity: 0.6;
   }
-  35%{
-      opacity: 0.6;
+  30% {
+    opacity: 0.2;
   }
-  40%{
-      opacity: 0.2;
+  35% {
+    opacity: 0.6;
+  }
+  40% {
+    opacity: 0.2;
   }
 }

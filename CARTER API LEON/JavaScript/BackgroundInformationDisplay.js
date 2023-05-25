@@ -6,7 +6,8 @@ function BackgroundWeatherDisplay() {
     navigator.geolocation.getCurrentPosition(function (position) {
       let lat2 = position.coords.latitude;
       let lon2 = position.coords.longitude;
-      let apiKey2 = "*****";
+      let apiKey2 =
+        "https://api.carterapi.com/v0/speak/2IKy96qCv45OE2UlwZHMPemOAedYqa9u/";
       let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat2}&lon=${lon2}&appid=${apiKey2}&units=metric`;
       fetch(url)
         .then((response) => response.json())
@@ -120,21 +121,6 @@ setInterval(checkForReminders, 600000);
 //
 //
 //
-function DisplayBibleCollageWarning() {
-  var date = new Date();
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  if (date.getDay() == 4 || date.getDay() == 1) {
-    document.getElementById("bibleCollege").style.display = "block";
-    document.getElementById("bibleCollege").innerHTML =
-      "Today is Bible College";
-  } else {
-    document.getElementById("bibleCollege").style.display = "none";
-  }
-}
-
-window.onload = DisplayBibleCollageWarning();
-setInterval(DisplayBibleCollageWarning, 100);
 //
 //
 //

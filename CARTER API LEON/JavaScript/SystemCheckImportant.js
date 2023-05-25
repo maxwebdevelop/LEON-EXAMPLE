@@ -1,10 +1,14 @@
 function SystemCheck() {
   let myAudio = new Audio();
   if (navigator.onLine) {
-    myAudio.src = "*****" + "Your system is online";
+    myAudio.src =
+      "https://api.carterapi.com/v0/speak/2IKy96qCv45OE2UlwZHMPemOAedYqa9u/" +
+      "Your system is online";
     document.getElementById("output").innerHTML = "Your system is online";
   } else {
-    myAudio.src = "*****" + "Your system is offline";
+    myAudio.src =
+      "https://api.carterapi.com/v0/speak/2IKy96qCv45OE2UlwZHMPemOAedYqa9u/" +
+      "Your system is offline";
     document.getElementById("output").innerHTML = "Your system is offline";
   }
   myAudio.play();
@@ -12,7 +16,7 @@ function SystemCheck() {
     if (navigator.getBattery) {
       navigator.getBattery().then(function (battery) {
         myAudio.src =
-          "*****" +
+          "https://api.carterapi.com/v0/speak/2IKy96qCv45OE2UlwZHMPemOAedYqa9u/" +
           "Your battery is at " +
           Math.round(battery.level * 100) +
           " percent";
@@ -21,7 +25,9 @@ function SystemCheck() {
         myAudio.play();
         myAudio.onended = () => {
           if (console.error) {
-            myAudio.src = "*****" + "There are no errors in the console";
+            myAudio.src =
+              "https://api.carterapi.com/v0/speak/2IKy96qCv45OE2UlwZHMPemOAedYqa9u/" +
+              "There are no errors in the console";
             document.getElementById("output").innerHTML =
               "There are no errors in the console";
             myAudio.play();

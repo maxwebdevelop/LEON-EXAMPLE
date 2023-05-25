@@ -2,12 +2,14 @@ function displayImportantNews() {
   let date = new Date();
   let hours = date.getHours();
   let minutes = date.getMinutes();
-  if (hours >= 5 && hours <= 7) {
+  if (hours >= 5 && hours <= 8) {
     setInterval(() => {
       displayImportantNews();
     }, 300000);
     console.log("Just ran the function");
-    fetch(`https://newsapi.org/v2/top-headlines?sources=abc-news&apiKey=*****`)
+    fetch(
+      `https://newsapi.org/v2/top-headlines?sources=abc-news&apiKey=d145f497889e4b729d11b61c744f1561`
+    )
       .then((response) => response.json())
       .then((data) => {
         let importantNews = data.articles.slice(0, 3);
@@ -32,6 +34,3 @@ function displayImportantNews() {
   }
 }
 window.onload = displayImportantNews();
-setInterval(() => {
-  displayImportantNews();
-}, 1800000);
